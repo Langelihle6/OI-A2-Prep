@@ -1,0 +1,32 @@
+# Auto-generated config.Config textproto
+email {}
+server {
+  application_name: "TrailBase"
+  logs_retention_sec: 604800
+}
+auth {
+  auth_token_ttl_sec: 3600
+  refresh_token_ttl_sec: 2592000
+}
+jobs {}
+record_apis: [{
+  name: "GEAR"
+  table_name: "gear"
+  acl_world: [CREATE, READ, UPDATE, DELETE]
+}, {
+  name: "REGIONS"
+  table_name: "regions"
+  acl_world: [CREATE, READ, UPDATE, DELETE]
+}, {
+  name: "REPORTS"
+  table_name: "reports"
+  acl_world: [READ, CREATE, UPDATE, DELETE]
+}, {
+  name: "TRAILS"
+  table_name: "trails"
+  acl_world: [CREATE, READ, UPDATE, DELETE]
+}, {
+  name: "USERS"
+  table_name: "users"
+  acl_world: [CREATE, READ, UPDATE, DELETE]
+}]
